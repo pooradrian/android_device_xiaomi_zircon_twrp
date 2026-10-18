@@ -20,10 +20,6 @@ DEVICE_PATH := device/xiaomi/zircon
 # system-server classpath fragment to be declared in the product config
 PRODUCT_APEX_SYSTEM_SERVER_JARS += com.android.crashrecovery:service-crashrecovery
 
-# Declare hal_hwcrypto actions (gated behind starting_at_board_api(202504) in
-# platform sepolicy) for the recovery-only product ahead of vendor policy files
-PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/product
-
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 

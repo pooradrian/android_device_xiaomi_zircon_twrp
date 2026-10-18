@@ -1,6 +1,0 @@
-attribute hal_hwcrypto;
-expandattribute hal_hwcrypto true;
-attribute hal_hwcrypto_client;
-expandattribute hal_hwcrypto_client true;
-attribute hal_hwcrypto_server;
-expandattribute hal_hwcrypto_server false;
